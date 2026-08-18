@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="我不是蛋神 App 技術支援、使用說明與常見問題。">
+  <title>我不是蛋神｜App 技術支援</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --cream: #fff8de;
+      --paper: #fffdf7;
+      --brown: #3b1909;
+      --muted: #7b6047;
+      --sun: #ffb800;
+      --orange: #ff8a00;
+      --mint: #63c78e;
+      --line: rgba(255, 184, 0, .25);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #fff0ad, var(--cream) 28%, var(--paper));
+      color: var(--brown);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif;
+      line-height: 1.7;
+    }
+    a { color: #815000; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:focus-visible, .button:focus-visible { outline: 3px solid var(--brown); outline-offset: 3px; }
+    main { width: min(780px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 72px; }
+    header, section {
+      background: rgba(255, 255, 255, .86);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 10px 30px rgba(59, 25, 9, .06);
+    }
+    .mark {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: #fff1a8;
+      font-size: 31px;
+    }
+    h1 { margin: .45rem 0 .2rem; font-size: clamp(2rem, 7vw, 3.4rem); line-height: 1.15; }
+    h2 { margin: 0 0 .45rem; font-size: 1.2rem; }
+    h3 { margin: 1.05rem 0 .25rem; font-size: 1rem; }
+    p { margin: .35rem 0; color: var(--muted); }
+    ol, ul { margin: .6rem 0 0; padding-left: 1.4rem; color: var(--muted); }
+    li + li { margin-top: .45rem; }
+    .lead { font-size: 1.06rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .chip {
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: #fff6c8;
+      color: #674216;
+      font-size: .88rem;
+      font-weight: 650;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 11px 17px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #ffc928, var(--sun));
+      color: var(--brown);
+      font-weight: 750;
+      text-decoration: none;
+      box-shadow: 0 6px 15px rgba(255, 184, 0, .24);
+    }
+    .notice {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-left: 4px solid var(--mint);
+      border-radius: 10px;
+      background: #eefaf3;
+      color: #355b46;
+      font-size: .92rem;
+    }
+    .meta { font-size: .9rem; }
+    footer { text-align: center; color: var(--muted); font-size: .85rem; padding-top: 12px; }
+    @media (max-width: 480px) {
+      main { width: min(100% - 22px, 780px); padding-top: 24px; }
+      header, section { padding: 19px; border-radius: 20px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark" aria-hidden="true">🥚</div>
+    <h1>我不是蛋神<br>App 技術支援</h1>
+    <p class="lead">需要協助嗎？這裡整理了使用方式、常見問題與聯絡管道。</p>
+    <div class="chips" aria-label="App 特點">
+      <span class="chip">免登入</span>
+      <span class="chip">無廣告</span>
+      <span class="chip">本機儲存</span>
+      <span class="chip">繁體中文</span>
+    </div>
+  </header>
+
+  <section id="guide">
+    <h2>快速開始</h2>
+    <ol>
+      <li>開啟 App 後，在「打卡」首頁使用加號或減號調整這次要記錄的雞蛋數量。</li>
+      <li>點選「立即打卡」，這次數量就會加入今天的累計。</li>
+      <li>若同一天還要增加記錄，可再次從零選擇數量並打卡，App 會自動加到今日總數。</li>
+      <li>使用底部分頁查看「統計」、「換算」與「成就」。</li>
+      <li>點選首頁右上角的齒輪，可查看只讀歷史記錄、隱私權政策或清除全部資料。</li>
+    </ol>
+  </section>
+
+  <section id="faq">
+    <h2>常見問題</h2>
+
+    <h3>為什麼第一次開啟時統計都是零？</h3>
+    <p>這是正常狀態。完成第一次打卡後，統計、Egg Map、趣味換算與成就進度就會根據你的記錄更新。</p>
+
+    <h3>為什麼不能修改過去的記錄？</h3>
+    <p>歷史記錄採只讀設計，用來保留當時完成的打卡結果，因此不能回頭編輯。</p>
+
+    <h3>資料會同步到其他裝置嗎？</h3>
+    <p>不會。本 App 不使用開發者伺服器或帳號系統，記錄只保存在目前裝置上。裝置備份是否包含 App 資料，取決於你的 iOS 與 iCloud 備份設定。</p>
+
+    <h3>如何刪除全部資料？</h3>
+    <p>前往「打卡」首頁右上角的「設定」，選擇「清除所有資料」並再次確認。刪除後無法復原。</p>
+
+    <h3>為什麼沒有聽到打卡音效或感覺到震動？</h3>
+    <p>請確認裝置音量、靜音模式、觸覺回饋設定與系統狀態。部分回饋在模擬器上無法完整呈現，建議使用實體 iPhone 測試。</p>
+
+    <h3>趣味換算可以作為飲食或健康依據嗎？</h3>
+    <p>不可以。所有換算都是娛樂用途的近似類比，不是精密測量，也不構成飲食、營養、健康或醫療建議。</p>
+  </section>
+
+  <section id="privacy">
+    <h2>資料與隱私</h2>
+    <p>本 App 不要求登入，不使用廣告或第三方分析工具，也不會把你的打卡記錄傳送給開發者。你可以閱讀完整的<a href="privacy-policy.html">隱私權政策</a>。</p>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡技術支援</h2>
+    <p>如果上述內容仍未解決問題，請在電子郵件中附上裝置型號、iOS 版本、App 版本、問題發生步驟，以及不包含敏感資料的畫面截圖。</p>
+    <!-- 上線前：請將下方兩處 support@example.com 替換為真實且可收信的支援信箱。 -->
+    <a class="button" href="mailto:support@example.com?subject=%E6%88%91%E4%B8%8D%E6%98%AF%E8%9B%8B%E7%A5%9E%20App%20%E6%8A%80%E8%A1%93%E6%94%AF%E6%8F%B4">寄信給技術支援</a>
+    <p class="meta">支援信箱：<a href="mailto:support@example.com">support@example.com</a></p>
+    <p class="meta">開發者：Zhang Runting</p>
+    <div class="notice"><strong>回覆時間：</strong>我們會盡快處理來信。請勿在郵件中提供密碼、付款資料或其他敏感資訊。</div>
+  </section>
+
+  <footer>© 2026 Zhang Runting · 我不是蛋神 · 最後更新：2026 年 8 月 18 日</footer>
+</main>
+</body>
+</html>
